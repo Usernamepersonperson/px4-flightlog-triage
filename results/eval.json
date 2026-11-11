@@ -1,0 +1,530 @@
+{
+ "logs_parsed": 70,
+ "logs_failed": 0,
+ "failures": [],
+ "date_range": [
+  "2017-05-05",
+  "2026-11-05"
+ ],
+ "injection": {
+  "vibration": {
+   "unit": "m/s2 RMS per axis",
+   "logs": 62,
+   "by_magnitude": {
+    "1.5": {
+     "trials": 183,
+     "detected": 0,
+     "rate": 0.0
+    },
+    "3.0": {
+     "trials": 182,
+     "detected": 7,
+     "rate": 0.0385
+    },
+    "6.0": {
+     "trials": 182,
+     "detected": 179,
+     "rate": 0.9835
+    },
+    "12.0": {
+     "trials": 182,
+     "detected": 182,
+     "rate": 1.0
+    }
+   },
+   "timing_abs_median_s": 0.321,
+   "timing_abs_p95_s": 0.816
+  },
+  "voltage_sag": {
+   "unit": "V per cell",
+   "logs": 26,
+   "by_magnitude": {
+    "0.06": {
+     "trials": 78,
+     "detected": 1,
+     "rate": 0.0128
+    },
+    "0.12": {
+     "trials": 78,
+     "detected": 44,
+     "rate": 0.5641
+    },
+    "0.24": {
+     "trials": 78,
+     "detected": 78,
+     "rate": 1.0
+    },
+    "0.48": {
+     "trials": 78,
+     "detected": 78,
+     "rate": 1.0
+    }
+   },
+   "timing_abs_median_s": 0.249,
+   "timing_abs_p95_s": 0.897
+  },
+  "gnss_dropout": {
+   "unit": "s without 3D fix",
+   "logs": 63,
+   "by_magnitude": {
+    "0.5": {
+     "trials": 187,
+     "detected": 0,
+     "rate": 0.0
+    },
+    "1.5": {
+     "trials": 186,
+     "detected": 186,
+     "rate": 1.0
+    },
+    "3.0": {
+     "trials": 186,
+     "detected": 186,
+     "rate": 1.0
+    },
+    "6.0": {
+     "trials": 184,
+     "detected": 184,
+     "rate": 1.0
+    }
+   },
+   "timing_abs_median_s": 0.101,
+   "timing_abs_p95_s": 0.207
+  }
+ },
+ "real_logs": {
+  "rated_good": {
+   "logs": 35,
+   "airborne_h": 3.78,
+   "flags": 95,
+   "flags_per_h": 25.13,
+   "fault_flags": 23,
+   "fault_flags_per_h": 6.08,
+   "logs_without_fault_flags": 28,
+   "logs_without_flags": 7,
+   "per_kind": {
+    "battery_cell_count_mismatch": {
+     "flags": 5,
+     "per_h": 1.32,
+     "logs": 5
+    },
+    "battery_high_resistance": {
+     "flags": 4,
+     "per_h": 1.06,
+     "logs": 4
+    },
+    "battery_low_voltage": {
+     "flags": 3,
+     "per_h": 0.79,
+     "logs": 1
+    },
+    "battery_sag": {
+     "flags": 2,
+     "per_h": 0.53,
+     "logs": 1
+    },
+    "battery_sensor_implausible": {
+     "flags": 4,
+     "per_h": 1.06,
+     "logs": 4
+    },
+    "datalink_loss": {
+     "flags": 15,
+     "per_h": 3.97,
+     "logs": 7
+    },
+    "log_dropout": {
+     "flags": 44,
+     "per_h": 11.64,
+     "logs": 15
+    },
+    "motor_saturation": {
+     "flags": 14,
+     "per_h": 3.7,
+     "logs": 5
+    },
+    "rc_loss": {
+     "flags": 1,
+     "per_h": 0.26,
+     "logs": 1
+    },
+    "vibration": {
+     "flags": 3,
+     "per_h": 0.79,
+     "logs": 2
+    }
+   }
+  },
+  "rated_problem": {
+   "logs": 10,
+   "airborne_h": 1.118,
+   "flags": 87,
+   "flags_per_h": 77.83,
+   "fault_flags": 69,
+   "fault_flags_per_h": 61.73,
+   "logs_without_fault_flags": 4,
+   "logs_without_flags": 2,
+   "per_kind": {
+    "battery_low_voltage": {
+     "flags": 1,
+     "per_h": 0.89,
+     "logs": 1
+    },
+    "battery_sag": {
+     "flags": 3,
+     "per_h": 2.68,
+     "logs": 1
+    },
+    "cpu_load": {
+     "flags": 8,
+     "per_h": 7.16,
+     "logs": 1
+    },
+    "datalink_loss": {
+     "flags": 11,
+     "per_h": 9.84,
+     "logs": 3
+    },
+    "estimator_rejection": {
+     "flags": 14,
+     "per_h": 12.52,
+     "logs": 2
+    },
+    "gnss_poor": {
+     "flags": 2,
+     "per_h": 1.79,
+     "logs": 1
+    },
+    "log_dropout": {
+     "flags": 7,
+     "per_h": 6.26,
+     "logs": 2
+    },
+    "motor_saturation": {
+     "flags": 17,
+     "per_h": 15.21,
+     "logs": 2
+    },
+    "rc_loss": {
+     "flags": 1,
+     "per_h": 0.89,
+     "logs": 1
+    },
+    "vibration": {
+     "flags": 23,
+     "per_h": 20.58,
+     "logs": 4
+    }
+   }
+  },
+  "recent": {
+   "logs": 25,
+   "airborne_h": 1.797,
+   "flags": 186,
+   "flags_per_h": 103.51,
+   "fault_flags": 176,
+   "fault_flags_per_h": 97.94,
+   "logs_without_fault_flags": 10,
+   "logs_without_flags": 8,
+   "per_kind": {
+    "accel_clipping": {
+     "flags": 27,
+     "per_h": 15.03,
+     "logs": 7
+    },
+    "battery_cell_count_mismatch": {
+     "flags": 1,
+     "per_h": 0.56,
+     "logs": 1
+    },
+    "battery_high_resistance": {
+     "flags": 2,
+     "per_h": 1.11,
+     "logs": 2
+    },
+    "battery_low_voltage": {
+     "flags": 16,
+     "per_h": 8.9,
+     "logs": 3
+    },
+    "battery_sag": {
+     "flags": 30,
+     "per_h": 16.7,
+     "logs": 2
+    },
+    "cpu_load": {
+     "flags": 1,
+     "per_h": 0.56,
+     "logs": 1
+    },
+    "datalink_loss": {
+     "flags": 5,
+     "per_h": 2.78,
+     "logs": 2
+    },
+    "estimator_rejection": {
+     "flags": 11,
+     "per_h": 6.12,
+     "logs": 7
+    },
+    "gnss_loss": {
+     "flags": 2,
+     "per_h": 1.11,
+     "logs": 2
+    },
+    "gnss_poor": {
+     "flags": 1,
+     "per_h": 0.56,
+     "logs": 1
+    },
+    "log_dropout": {
+     "flags": 2,
+     "per_h": 1.11,
+     "logs": 1
+    },
+    "motor_saturation": {
+     "flags": 60,
+     "per_h": 33.39,
+     "logs": 7
+    },
+    "rc_loss": {
+     "flags": 6,
+     "per_h": 3.34,
+     "logs": 4
+    },
+    "vibration": {
+     "flags": 22,
+     "per_h": 12.24,
+     "logs": 8
+    }
+   }
+  }
+ },
+ "real_logs_holdout": {
+  "rated_good": {
+   "logs": 20,
+   "airborne_h": 2.513,
+   "flags": 72,
+   "flags_per_h": 28.66,
+   "fault_flags": 18,
+   "fault_flags_per_h": 7.16,
+   "logs_without_fault_flags": 16,
+   "logs_without_flags": 4,
+   "per_kind": {
+    "battery_cell_count_mismatch": {
+     "flags": 1,
+     "per_h": 0.4,
+     "logs": 1
+    },
+    "battery_high_resistance": {
+     "flags": 1,
+     "per_h": 0.4,
+     "logs": 1
+    },
+    "battery_low_voltage": {
+     "flags": 3,
+     "per_h": 1.19,
+     "logs": 1
+    },
+    "battery_sensor_implausible": {
+     "flags": 2,
+     "per_h": 0.8,
+     "logs": 2
+    },
+    "datalink_loss": {
+     "flags": 11,
+     "per_h": 4.38,
+     "logs": 3
+    },
+    "log_dropout": {
+     "flags": 39,
+     "per_h": 15.52,
+     "logs": 13
+    },
+    "motor_saturation": {
+     "flags": 13,
+     "per_h": 5.17,
+     "logs": 4
+    },
+    "vibration": {
+     "flags": 2,
+     "per_h": 0.8,
+     "logs": 1
+    }
+   }
+  },
+  "rated_problem": {
+   "logs": 10,
+   "airborne_h": 1.118,
+   "flags": 87,
+   "flags_per_h": 77.83,
+   "fault_flags": 69,
+   "fault_flags_per_h": 61.73,
+   "logs_without_fault_flags": 4,
+   "logs_without_flags": 2,
+   "per_kind": {
+    "battery_low_voltage": {
+     "flags": 1,
+     "per_h": 0.89,
+     "logs": 1
+    },
+    "battery_sag": {
+     "flags": 3,
+     "per_h": 2.68,
+     "logs": 1
+    },
+    "cpu_load": {
+     "flags": 8,
+     "per_h": 7.16,
+     "logs": 1
+    },
+    "datalink_loss": {
+     "flags": 11,
+     "per_h": 9.84,
+     "logs": 3
+    },
+    "estimator_rejection": {
+     "flags": 14,
+     "per_h": 12.52,
+     "logs": 2
+    },
+    "gnss_poor": {
+     "flags": 2,
+     "per_h": 1.79,
+     "logs": 1
+    },
+    "log_dropout": {
+     "flags": 7,
+     "per_h": 6.26,
+     "logs": 2
+    },
+    "motor_saturation": {
+     "flags": 17,
+     "per_h": 15.21,
+     "logs": 2
+    },
+    "rc_loss": {
+     "flags": 1,
+     "per_h": 0.89,
+     "logs": 1
+    },
+    "vibration": {
+     "flags": 23,
+     "per_h": 20.58,
+     "logs": 4
+    }
+   }
+  },
+  "recent": {
+   "logs": 15,
+   "airborne_h": 1.12,
+   "flags": 118,
+   "flags_per_h": 105.38,
+   "fault_flags": 111,
+   "fault_flags_per_h": 99.13,
+   "logs_without_fault_flags": 6,
+   "logs_without_flags": 4,
+   "per_kind": {
+    "accel_clipping": {
+     "flags": 9,
+     "per_h": 8.04,
+     "logs": 3
+    },
+    "battery_low_voltage": {
+     "flags": 16,
+     "per_h": 14.29,
+     "logs": 3
+    },
+    "battery_sag": {
+     "flags": 30,
+     "per_h": 26.79,
+     "logs": 2
+    },
+    "cpu_load": {
+     "flags": 1,
+     "per_h": 0.89,
+     "logs": 1
+    },
+    "datalink_loss": {
+     "flags": 5,
+     "per_h": 4.47,
+     "logs": 2
+    },
+    "estimator_rejection": {
+     "flags": 7,
+     "per_h": 6.25,
+     "logs": 5
+    },
+    "gnss_poor": {
+     "flags": 1,
+     "per_h": 0.89,
+     "logs": 1
+    },
+    "log_dropout": {
+     "flags": 2,
+     "per_h": 1.79,
+     "logs": 1
+    },
+    "motor_saturation": {
+     "flags": 36,
+     "per_h": 32.15,
+     "logs": 4
+    },
+    "rc_loss": {
+     "flags": 3,
+     "per_h": 2.68,
+     "logs": 2
+    },
+    "vibration": {
+     "flags": 8,
+     "per_h": 7.14,
+     "logs": 3
+    }
+   }
+  }
+ },
+ "speed": {
+  "total_mb": 1076.6,
+  "total_s": 300.5,
+  "mb_per_s": 3.58,
+  "s_per_flight_hour": 44.9,
+  "parse_share": 0.956,
+  "airborne_h": 6.695
+ },
+ "config": {
+  "vib_window_s": 1.0,
+  "vib_highpass_s": 0.25,
+  "vibration_warn_m_s2": 10.0,
+  "vibration_min_s": 2.0,
+  "clip_level_m_s2": 152.0,
+  "clip_min_count": 1,
+  "batt_grid_hz": 5.0,
+  "batt_baseline_s": 30.0,
+  "batt_sag_v_per_cell": 0.12,
+  "batt_sag_min_s": 1.0,
+  "batt_min_cell_v": 3.3,
+  "batt_low_min_s": 2.0,
+  "batt_r_cell_warn_ohm": 0.02,
+  "batt_min_current_std_a": 0.5,
+  "batt_jump_v_per_cell": 0.15,
+  "batt_max_cell_v": 4.5,
+  "gnss_min_fix": 3,
+  "gnss_loss_min_s": 1.0,
+  "gnss_gap_s": 1.5,
+  "gnss_eph_max_m": 3.0,
+  "gnss_min_sats": 6,
+  "gnss_poor_min_s": 3.0,
+  "est_test_ratio_fail": 1.0,
+  "est_min_s": 0.5,
+  "link_loss_min_s": 0.5,
+  "rc_gap_s": 1.0,
+  "motor_sat_high": 0.95,
+  "motor_sat_min_s": 0.5,
+  "motor_sat_low": 0.05,
+  "motor_sat_low_min_s": 10.0,
+  "cpu_load_warn": 0.9,
+  "cpu_min_s": 1.0,
+  "merge_gap_s": 2.0,
+  "log_gap_s": 0.5
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "claim": "One command ranks the problems in a drone flight log, with timestamps",
+ "data_label": "open data: 70 public PX4 Flight Review logs (2017-2026), faults injected by this repo",
+ "stats": [
+  [
+   "100%",
+   "injected faults found at 2x threshold",
+   "accent"
+  ],
+  [
+   "7.2/h",
+   "fault flags, held-out good logs",
+   "green"
+  ],
+  [
+   "0.3 s",
+   "median timing error, vibration",
+   "amber"
+  ]
+ ],
+ "limit": "No hardware; thresholds not tuned per airframe; real-log labels are uploader ratings plus my check",
+ "alt": "Line chart on a dark background: share of faults found versus fault size relative to the detection threshold. Vibration, battery sag and GNSS dropout curves rise from near 0% at half the threshold to 100% at twice it.",
+ "hashtags": [
+  "#Drones",
+  "#PX4",
+  "#OpenSource",
+  "#Robotics",
+  "#DataEngineering",
+  "#Python"
+ ],
+ "post": "A drone flight log holds hundreds of signals. After a bad flight, the hard part is finding the minute that matters.\n\nI built an open-source triage tool for PX4 ULog files. One command gives a ranked list of problems with timestamps and a one-page report: vibration and accelerometer clipping, battery sag and internal resistance, GNSS loss, estimator rejections, RC and telemetry loss, motor saturation, CPU load. Every threshold is documented and configurable.\n\nTo measure it, I took 70 public logs from the PX4 Flight Review database and injected known faults into their signals:\n- At twice the detection threshold, 100% of vibration bursts, voltage sags and GNSS dropouts were found.\n- Median timing error was 0.1-0.3 s.\n- On 20 held-out logs that their pilots rated good, it raised 7.2 fault flags per flight hour, and 16 of the 20 logs had none.\n- It processes 3.6 MB of log per second on one thread.\n\nNot verified yet: no hardware, thresholds are not tuned per airframe, and real-log labels are the uploader's rating plus my own hand check.\n\nIf you review flight logs, which flag would save you the most time?\n\nCode: https://github.com/Usernamepersonperson/px4-flightlog-triage"
+}

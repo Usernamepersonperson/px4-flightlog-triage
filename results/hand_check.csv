@@ -1,0 +1,14 @@
+log_id,stratum,kind,flags,judgement,note
+d10755c3-5d92-49a4-95a7-c5c1c4f6f828,rated_good,datalink_loss,9,real,firmware data_link_lost flag set 15-53 s at a time; flight continued normally
+d10755c3-5d92-49a4-95a7-c5c1c4f6f828,rated_good,battery_sensor_implausible,1,real,voltage jumps between about 2.8 and 4.7 V per cell at 5 Hz all flight
+d10755c3-5d92-49a4-95a7-c5c1c4f6f828,rated_good,motor_saturation,1,real,one motor at max for 0.6 s during a manoeuvre near 411 s
+d10755c3-5d92-49a4-95a7-c5c1c4f6f828,rated_good,log_dropout,2,real,sensor_combined silent 0.5-0.6 s
+fbd2e2ee-a264-4651-bcbf-9aba14465153,rated_good,vibration,2,borderline,metric sits at 8-10 m/s2 all flight; flags are brief crossings of 10 (threshold not tuned for this airframe)
+fbd2e2ee-a264-4651-bcbf-9aba14465153,rated_good,motor_saturation,2,real,motor 3 near idle for 11 s while others work; motor 2 at max for 2 s
+fbd2e2ee-a264-4651-bcbf-9aba14465153,rated_good,battery_high_resistance,1,unverifiable,36 mOhm per cell from the voltage/current fit; no reference measurement
+fbd2e2ee-a264-4651-bcbf-9aba14465153,rated_good,log_dropout,2,real,sensor_combined silent 0.5-0.6 s
+b1549dcf-0966-4ef3-a7fb-3fcdc023c7bc,rated_good,motor_saturation,9,real,motors repeatedly at max between 220 and 305 s (heavy manoeuvring)
+b1549dcf-0966-4ef3-a7fb-3fcdc023c7bc,rated_good,battery_low_voltage,3,real,cell voltage dips to 3.04-3.25 V during the same high-load period
+b1549dcf-0966-4ef3-a7fb-3fcdc023c7bc,rated_good,log_dropout,1,real,sensor_combined silent 0.7 s
+081da8b4-253b-4d33-b317-548a75fe5cd6,rated_good (dev),log_dropout,3,real,all 3 match dropout records written by the logger itself in the raw ULog
+6588d2a8-a0ae-48fc-afb2-725342ca233c,rated_good (dev),log_dropout,2,real,both match dropout records written by the logger itself in the raw ULog

@@ -1,0 +1,34 @@
+[project]
+name = "px4-flightlog-triage"
+version = "0.1.0"
+description = "Ranked problem list with timestamps for PX4 ULog drone flight logs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Victor Bonilla" }]
+dependencies = ["numpy>=1.24", "pyulog>=1.0", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+flightlog-triage = "flightlog_triage.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["flightlog_triage*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:asyncio"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["cache"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
