@@ -102,4 +102,4 @@ Detectors run on plain numpy arrays, not pyulog objects, so tests and fault inje
 
 ## Licence
 
-MIT, Copyright (c) 2026 Victor Bonilla. Depends on pyulog (BSD-3-Clause), numpy and matplotlib.
+MIT, Copyright (c) 2026 VB-Builds. Depends on pyulog (BSD-3-Clause), numpy and matplotlib.
