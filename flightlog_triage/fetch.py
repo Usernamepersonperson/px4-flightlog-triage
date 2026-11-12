@@ -19,7 +19,7 @@ GOOD = {"good", "great", "BRAVO!"}
 PROBLEM = {"unsatisfactory", "crash_sw_hw", "crash_pilot"}
 KEEP = ("log_id", "log_date", "rating", "duration_s", "mav_type", "ver_sw_release", "error_labels",
         "num_logged_errors", "download_url")
-UA = {"User-Agent": "px4-flightlog-triage/0.1 (research sample; github.com/Usernamepersonperson)"}
+UA = {"User-Agent": "px4-flightlog-triage/0.1 (research sample; github.com/VB-Builds)"}
 
 
 def iter_index(stream, chunk: int = 1 << 20):
